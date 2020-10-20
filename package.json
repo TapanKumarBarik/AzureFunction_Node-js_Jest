@@ -4,7 +4,7 @@
     "description": "",
     "scripts": {
         "start": "func start",
-        "build": "node index.js"
+        "build": "node index.js",
         "test": "jest"
     },
     "dependencies": {
