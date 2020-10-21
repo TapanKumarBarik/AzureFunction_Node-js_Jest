@@ -20,3 +20,13 @@ steps:
      npm run build --if-present
     npm test
   displayName: 'npm install and build'
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: '6b1d2215-5f5b-4921-b461-6bb2c78bb0d8'
+    appType: functionAppLinux
+    appName: 'nodejsCiCdApptest'
+    #Uncomment the next lines to deploy to a deployment slot
+    #Note that deployment slots is not supported for Linux Dynamic SKU
+    #deployToSlotOrASE: true
+    #resourceGroupName: '<Resource Group Name>'
+    #slotName: '<Slot name>'
