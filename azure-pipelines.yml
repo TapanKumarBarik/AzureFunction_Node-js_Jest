@@ -14,12 +14,7 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-- task: AzureFunctionApp@1
-  displayName: 'Azure Function App Deploy: nodejsCiCdApptest'
-  inputs:
-    azureSubscription: 'Free Trial (6b1d2215-5f5b-4921-b461-6bb2c78bb0d8)'
-    appType: functionApp
-    appName: nodejsCiCdApptest
+
 - script: |
     npm install
      npm run build --if-present
